@@ -1,0 +1,157 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+$blanc: white;
+$noir-100: black;
+$noir-75: #9C9C9C;
+$noir-50: #D0D0D0;
+$noir-25: #EDEDED;
+ /* TURQUOISE */
+$turquoise-base: #2BE7B4;
+$turquoise-hightlight: #7CFEDA;
+$turquoise-light: #EFFDF9;
+$turquoise-dark: #004C37;
+$turquoise-darker: #022C20;
+
+/* INDIGO */
+$indigo-base: #5025ED;
+$indigo-hightlight: #C4B3FF;
+$indigo-light: #F1EEFE;
+$indigo-dark: #2C1A72;
+$indigo-darker: #130D2E;
+
+/* CORAIL */
+$corail-base: #FF4A22;
+$corail-hightlight: #FF957C;
+$corail-light: #FFF1EE;
+$corail-dark: #8D1A02;
+$corail-darker: #3D1008;
+
+.editor-styles-wrapper {
+
+	.wp-block-fourmi-e-conteneur {
+
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		align-self: flex-start;
+		max-width: initial;
+		box-sizing: initial;
+		margin: 0;
+		padding: 20px 40px 20px 20px;
+		background-color: rgba($color: #000000, $alpha: .25);
+
+		&::after {
+			position: relative;
+		}
+	}
+
+	.bg-blanc {
+		background-color: $blanc;
+		color: $noir-100;
+	}
+
+	.bg-noir-100 {
+		background-color: $noir-100;
+		color: $blanc;
+	}
+
+	.bg-noir-75 {
+		background-color: $noir-75;
+		color: $noir-100;
+	}
+
+	.bg-noir-50 {
+		background-color: $noir-50;
+		color: $noir-100;
+	}
+
+	.bg-noir-25 {
+		background-color: $noir-25;
+		color: $noir-100;
+	}
+
+
+	/* Turquoise */
+	.bg-turquoise-base {
+		background-color: $turquoise-base;
+		color: $noir-100;
+	}
+
+	.bg-turquoise-hightlight {
+		background-color: $turquoise-hightlight;
+		color: $noir-100;
+	}
+
+	.bg-turquoise-light {
+		background-color: $turquoise-light;
+		color: $noir-100;
+	}
+
+	.bg-turquoise-dark {
+		background-color: $turquoise-dark;
+		color: $blanc;
+	}
+
+	.bg-turquoise-darker {
+		background-color: $turquoise-darker;
+		color: $blanc;
+	}
+
+	/* Indigo */
+	.bg-indigo-base {
+		background-color: $indigo-base;
+		color: $blanc;
+	}
+
+	.bg-indigo-hightlight {
+		background-color: $indigo-hightlight;
+		color: $noir-100;
+	}
+
+	.bg-indigo-light {
+		background-color: $indigo-light;
+		color: $noir-100;
+	}
+
+	.bg-indigo-dark {
+		background-color: $indigo-dark;
+		color: $blanc;
+	}
+
+	.bg-indigo-darker {
+		background-color: $indigo-darker;
+		color: $blanc;
+	}
+
+	/* Corail */
+	.bg-corail-base {
+		background-color: $corail-base;
+		color: $noir-100;
+	}
+
+	.bg-corail-hightlight {
+		background-color: $corail-hightlight;
+		color: $noir-100;
+	}
+
+	.bg-corail-light {
+		background-color: $corail-light;
+		color: $noir-100;
+	}
+
+	.bg-corail-dark {
+		background-color: $corail-dark;
+		color: $blanc;
+	}
+
+	.bg-corail-darker {
+		background-color: $corail-darker;
+		color: $blanc;
+	}
+}

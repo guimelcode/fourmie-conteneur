@@ -1,0 +1,124 @@
+{
+	"apiVersion": 2,
+	"name": "fourmi-e/conteneur",
+	"version": "0.1.0",
+	"title": "Fourmi-e Conteneur",
+	"category": "design",
+	"icon": "block-default",
+	"description": "Conteneur est un block de contenu pouvant être positionné au sein d'un segement - la fourmi-e -",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "fourmie-conteneur",
+	"parent": ["fourmi-e/segment", "fourmi-e/groupe-conteneur"],
+	"attributes": {
+		"content": {
+			"type": "html"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"backgroundColorClass": {
+			"type": "string"
+		},
+		"colonnage_withResponsive": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_withStart": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_simple": {
+			"type": "integer",
+			"default": 8
+		},
+		"colonnage_simple_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_small": {
+			"type": "integer"
+		},
+		"colonnage_medium": {
+			"type": "integer"
+		},
+		"colonnage_large": {
+			"type": "integer"
+		},
+		"colonnage_extraLarge": {
+			"type": "integer"
+		},
+		"colonnage_extraExtraLarge": {
+			"type": "integer"
+		},
+		"colonnage_small_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_medium_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_large_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_extraLarge_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_extraExtraLarge_start": {
+			"type": "integer",
+			"default": 1
+		},
+		"colonnage_small_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_medium_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_large_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_extraLarge_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"colonnage_extraExtraLarge_checked": {
+			"type": "boolean",
+			"default": false
+		},
+		"isRangee": {
+			"type": "boolean",
+			"default": false
+		},
+		"rangee_simple": {
+			"type": "number",
+			"default": 1
+		},
+		"rangee_small": {
+			"type": "number",
+			"default": 1
+		},
+		"rangee_medium": {
+			"type": "number",
+			"default": 1
+		},
+		"rangee_large": {
+			"type": "number",
+			"default": 1
+		},
+		"rangee_extraLarge": {
+			"type": "number",
+			"default": 1
+		}
+
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

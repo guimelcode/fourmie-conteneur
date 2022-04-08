@@ -1,0 +1,54 @@
+/**********/
+// Inspiré par Bootstrap
+
+@function breakpoint-infix($name, $breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints)==null, "", "-#{$name}");
+}
+
+@function breakpoint-min($name, $breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min !=0, $min, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints) {
+    $min: breakpoint-min($name, $breakpoints);
+
+    @if $min {
+        @media (min-width: $min) {
+            @content;
+        }
+    }
+
+    @else {
+        @content;
+    }
+}
+
+
+@each $breakpoint in map-keys($breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    @include media-breakpoint-up($breakpoint, $breakpoints) {
+
+        @for $i from 1 through 24 {
+
+            .col#{$infix}-#{$i} {
+                grid-column: span #{$i};
+            }
+			.row#{$infix}-#{$i} {
+                grid-row: span #{$i};
+            }
+            @for $j from 1 through 23 {
+                @if($j < 24 ) {
+
+                    .col#{$infix}-#{$i}-start-#{$j} {
+                        grid-column-start: #{$j} ;
+                        grid-column-end:  span #{$i};
+                    }
+                }
+            }
+        }
+
+    }
+
+}

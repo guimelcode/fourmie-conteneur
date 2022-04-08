@@ -1,0 +1,38 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+$breakpoints: (xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px);
+
+@import './grid-system';
+
+
+.wp-block-fourmi-e-conteneur {
+	background-color: rgba($color: #000000, $alpha: .25);
+
+	position: relative;
+	padding: 20px 40px 20px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-self: flex-start;
+	min-width: calc(100% - 60px);
+	height: calc(100% - 40px);
+
+
+
+	&>* {
+		min-height: max-content;
+		margin-bottom: 5px;
+		padding-bottom: 5px;
+	}
+
+}
+
